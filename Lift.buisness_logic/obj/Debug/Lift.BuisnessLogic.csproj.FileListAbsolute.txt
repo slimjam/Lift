@@ -1,0 +1,9 @@
+D:\study\3\c#\project\Lift\Lift.buisness_logic\obj\Debug\Lift.BuisnessLogic.csprojAssemblyReference.cache
+D:\study\3\c#\project\Lift\Lift.buisness_logic\obj\Debug\Lift.BuisnessLogic.csproj.CoreCompileInputs.cache
+D:\study\3\c#\project\Lift\Lift.buisness_logic\bin\Debug\Lift.buisness_logic.dll
+D:\study\3\c#\project\Lift\Lift.buisness_logic\bin\Debug\Lift.buisness_logic.pdb
+D:\study\3\c#\project\Lift\Lift.buisness_logic\bin\Debug\Lift.Data.dll
+D:\study\3\c#\project\Lift\Lift.buisness_logic\bin\Debug\Lift.Data.pdb
+D:\study\3\c#\project\Lift\Lift.buisness_logic\obj\Debug\Lift.BuisnessLogic.csproj.CopyComplete
+D:\study\3\c#\project\Lift\Lift.buisness_logic\obj\Debug\Lift.buisness_logic.dll
+D:\study\3\c#\project\Lift\Lift.buisness_logic\obj\Debug\Lift.buisness_logic.pdb

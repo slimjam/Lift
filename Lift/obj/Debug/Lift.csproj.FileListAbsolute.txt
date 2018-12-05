@@ -1,0 +1,13 @@
+D:\study\3\c#\project\Lift\Lift\obj\Debug\Lift.csprojAssemblyReference.cache
+D:\study\3\c#\project\Lift\Lift\obj\Debug\Lift.Form1.resources
+D:\study\3\c#\project\Lift\Lift\obj\Debug\Lift.Properties.Resources.resources
+D:\study\3\c#\project\Lift\Lift\obj\Debug\Lift.csproj.GenerateResource.cache
+D:\study\3\c#\project\Lift\Lift\obj\Debug\Lift.csproj.CoreCompileInputs.cache
+D:\study\3\c#\project\Lift\Lift\bin\Debug\Lift.exe.config
+D:\study\3\c#\project\Lift\Lift\bin\Debug\Lift.exe
+D:\study\3\c#\project\Lift\Lift\bin\Debug\Lift.pdb
+D:\study\3\c#\project\Lift\Lift\bin\Debug\Lift.buisness_logic.dll
+D:\study\3\c#\project\Lift\Lift\bin\Debug\Lift.buisness_logic.pdb
+D:\study\3\c#\project\Lift\Lift\obj\Debug\Lift.csproj.CopyComplete
+D:\study\3\c#\project\Lift\Lift\obj\Debug\Lift.exe
+D:\study\3\c#\project\Lift\Lift\obj\Debug\Lift.pdb

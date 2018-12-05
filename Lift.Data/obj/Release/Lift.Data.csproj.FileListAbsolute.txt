@@ -1,0 +1,6 @@
+D:\study\3\c#\project\Lift\Lift.Data\bin\Release\Lift.Data.dll
+D:\study\3\c#\project\Lift\Lift.Data\bin\Release\Lift.Data.pdb
+D:\study\3\c#\project\Lift\Lift.Data\obj\Release\Lift.Data.csprojAssemblyReference.cache
+D:\study\3\c#\project\Lift\Lift.Data\obj\Release\Lift.Data.csproj.CoreCompileInputs.cache
+D:\study\3\c#\project\Lift\Lift.Data\obj\Release\Lift.Data.dll
+D:\study\3\c#\project\Lift\Lift.Data\obj\Release\Lift.Data.pdb
