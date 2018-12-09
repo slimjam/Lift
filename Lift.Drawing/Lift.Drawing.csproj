@@ -60,6 +60,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Buiding.png" />
     <Content Include="Resources\standing-man5050.png" />
   </ItemGroup>
   <ItemGroup>

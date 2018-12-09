@@ -17,6 +17,7 @@ namespace Lift
     {
         int ppl = 2; // test sheet
         public Painter painter;
+        public buisness_logic.DataDispatcher.StartDataDispatcher dataDispatcher;
         public buisness_logic.DataDispatcher.DataDrawDispatcher dataDrawDispatcher;
 
         public Form1()
@@ -60,7 +61,7 @@ namespace Lift
             int floorsCount = 4; // test sheet
             // read from startupconf.floorsnum
             listView1.Visible = false;
-
+            //painter.drawBuilding(mainPanel);
             for (int n = 0; n < floorsCount; ++n)
             {
                 dataDrawDispatcher.SetData(floorN: n);
@@ -124,7 +125,15 @@ namespace Lift
             collections.Add(panel2.Controls);
             collections.Add(panel4.Controls);
             showButtons(collections);
-            
+
+            dataDispatcher = new buisness_logic.DataDispatcher.StartDataDispatcher
+                (
+                numericFloors.Value,
+                numericPpl.Value,
+                checkBoxDisplay.Checked,
+                checkBoxExcel.Checked
+                ); 
+
             startButton.Visible = false;
         }
 

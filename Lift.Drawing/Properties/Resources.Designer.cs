@@ -63,6 +63,16 @@ namespace Lift.Drawing.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Buiding {
+            get {
+                object obj = ResourceManager.GetObject("Buiding", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap standing_man5050 {
             get {
                 object obj = ResourceManager.GetObject("standing_man5050", resourceCulture);

@@ -60,6 +60,7 @@
     <Compile Include="Controllers\WeidthController\Implementations\WeidthController.cs" />
     <Compile Include="Controllers\WeidthController\IWeidthController.cs" />
     <Compile Include="DataDispatcher\DataDrawDispatcher\DataDrawDispatcher.cs" />
+    <Compile Include="DataDispatcher\StartDataDispatcher\StartDataDispatcher.cs" />
     <Compile Include="Models\Building\Building.cs" />
     <Compile Include="Models\Button\BaseButton.cs" />
     <Compile Include="Models\Button\FloorButton.cs" />

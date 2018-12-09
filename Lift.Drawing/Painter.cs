@@ -46,7 +46,14 @@ namespace Lift.Drawing
             pb.Location = data.location;
             pb.Enabled = false;
             pb.BorderStyle = BorderStyle.None;
+            pb.BackColor = Color.Transparent;
             return pb;
+        }
+
+        public void drawBuilding(Panel panel)
+        {
+            panel.BackgroundImage = new Bitmap(Properties.Resources.Buiding);
+            panel.BackgroundImageLayout = ImageLayout.Zoom;
         }
 
         public LiftPrototype drawLift(DataForDraw data) => new LiftPrototype(data);
