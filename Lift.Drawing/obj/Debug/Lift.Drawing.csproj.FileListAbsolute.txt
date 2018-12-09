@@ -1,0 +1,13 @@
+D:\study\3\c#\project\Lift\Lift.Drawing\bin\Debug\Lift.Drawing.dll
+D:\study\3\c#\project\Lift\Lift.Drawing\bin\Debug\Lift.Drawing.pdb
+D:\study\3\c#\project\Lift\Lift.Drawing\bin\Debug\Lift.Data.dll
+D:\study\3\c#\project\Lift\Lift.Drawing\bin\Debug\Lift.Data.pdb
+D:\study\3\c#\project\Lift\Lift.Drawing\obj\Debug\Lift.Drawing.csprojAssemblyReference.cache
+D:\study\3\c#\project\Lift\Lift.Drawing\obj\Debug\Lift.Drawing.Properties.Resources.resources
+D:\study\3\c#\project\Lift\Lift.Drawing\obj\Debug\Lift.Drawing.csproj.GenerateResource.cache
+D:\study\3\c#\project\Lift\Lift.Drawing\obj\Debug\Lift.Drawing.csproj.CoreCompileInputs.cache
+D:\study\3\c#\project\Lift\Lift.Drawing\obj\Debug\Lift.Drawing.csproj.CopyComplete
+D:\study\3\c#\project\Lift\Lift.Drawing\obj\Debug\Lift.Drawing.dll
+D:\study\3\c#\project\Lift\Lift.Drawing\obj\Debug\Lift.Drawing.pdb
+D:\study\3\c#\project\Lift\Lift.Drawing\bin\Debug\Lift.buisness_logic.dll
+D:\study\3\c#\project\Lift\Lift.Drawing\bin\Debug\Lift.buisness_logic.pdb

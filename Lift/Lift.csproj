@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -80,10 +81,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Lift.buisness_logic\Lift.BuisnessLogic.csproj">
+    <ProjectReference Include="..\Lift.buisness_logic\Lift.buisness_logic.csproj">
       <Project>{cbde75f9-3d55-4f8d-8646-0c3b2f631a78}</Project>
-      <Name>Lift.BuisnessLogic</Name>
+      <Name>Lift.buisness_logic</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Lift.Drawing\Lift.Drawing.csproj">
+      <Project>{8a2fe975-71b4-4a3d-b622-e0fa3a73fd36}</Project>
+      <Name>Lift.Drawing</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\standing-man5050.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

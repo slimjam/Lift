@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -58,6 +59,7 @@
     <Compile Include="Controllers\SystemController\ISystemController.cs" />
     <Compile Include="Controllers\WeidthController\Implementations\WeidthController.cs" />
     <Compile Include="Controllers\WeidthController\IWeidthController.cs" />
+    <Compile Include="DataDispatcher\DataDrawDispatcher\DataDrawDispatcher.cs" />
     <Compile Include="Models\Building\Building.cs" />
     <Compile Include="Models\Button\BaseButton.cs" />
     <Compile Include="Models\Button\FloorButton.cs" />

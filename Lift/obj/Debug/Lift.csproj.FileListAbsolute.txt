@@ -11,3 +11,7 @@ D:\study\3\c#\project\Lift\Lift\bin\Debug\Lift.buisness_logic.pdb
 D:\study\3\c#\project\Lift\Lift\obj\Debug\Lift.csproj.CopyComplete
 D:\study\3\c#\project\Lift\Lift\obj\Debug\Lift.exe
 D:\study\3\c#\project\Lift\Lift\obj\Debug\Lift.pdb
+D:\study\3\c#\project\Lift\Lift\bin\Debug\Lift.Drawing.dll
+D:\study\3\c#\project\Lift\Lift\bin\Debug\Lift.Data.dll
+D:\study\3\c#\project\Lift\Lift\bin\Debug\Lift.Drawing.pdb
+D:\study\3\c#\project\Lift\Lift\bin\Debug\Lift.Data.pdb
