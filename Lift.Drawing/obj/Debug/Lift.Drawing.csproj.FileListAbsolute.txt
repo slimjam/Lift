@@ -11,3 +11,5 @@ D:\study\3\c#\project\Lift\Lift.Drawing\obj\Debug\Lift.Drawing.dll
 D:\study\3\c#\project\Lift\Lift.Drawing\obj\Debug\Lift.Drawing.pdb
 D:\study\3\c#\project\Lift\Lift.Drawing\bin\Debug\Lift.buisness_logic.dll
 D:\study\3\c#\project\Lift\Lift.Drawing\bin\Debug\Lift.buisness_logic.pdb
+D:\study\3\c#\project\Lift\Lift.Drawing\bin\Debug\Lift.Interfaces.dll
+D:\study\3\c#\project\Lift\Lift.Drawing\bin\Debug\Lift.Interfaces.pdb

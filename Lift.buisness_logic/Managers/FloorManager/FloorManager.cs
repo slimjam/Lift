@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lift.buisness_logic.Models
+namespace Lift.buisness_logic.Managers.FloorManager
 {
-    interface IItem
+    public class FloorManager : BaseManager
     {
     }
 }

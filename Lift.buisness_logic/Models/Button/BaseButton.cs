@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lift.buisness_logic.Models.Button
+namespace Lift.buisness_logic
 {
-    public abstract class BaseButton
+    public abstract class BaseButton : IModel
     {
-        protected bool IsPressed { get; set; }
+        public bool IsPressed { get; set; }
     }
 }

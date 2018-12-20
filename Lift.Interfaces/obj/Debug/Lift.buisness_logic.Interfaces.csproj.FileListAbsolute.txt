@@ -1,0 +1,5 @@
+D:\study\3\c#\project\Lift\Lift.Interfaces\bin\Debug\Lift.Interfaces.dll
+D:\study\3\c#\project\Lift\Lift.Interfaces\bin\Debug\Lift.Interfaces.pdb
+D:\study\3\c#\project\Lift\Lift.Interfaces\obj\Debug\Lift.buisness_logic.Interfaces.csproj.CoreCompileInputs.cache
+D:\study\3\c#\project\Lift\Lift.Interfaces\obj\Debug\Lift.Interfaces.dll
+D:\study\3\c#\project\Lift\Lift.Interfaces\obj\Debug\Lift.Interfaces.pdb

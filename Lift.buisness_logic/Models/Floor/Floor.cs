@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lift.buisness_logic.Models.Floor
+namespace Lift.buisness_logic
 {
-    public class Floor
+    public class Floor : IModel
     {
         public readonly int number;
-        public readonly Button.FloorButton button;
+        public readonly FloorButton button;
     }
 }

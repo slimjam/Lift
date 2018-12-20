@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lift.buisness_logic.Models.Human
+namespace Lift.buisness_logic
 {
-    class Human
+    public class Human : IModel
     {
         public readonly int weidth;
         public readonly int targertFloor;

@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lift.buisness_logic.Models.Building
+
+namespace Lift.buisness_logic
 {
-    public class Building
+    public class Building : IModel
     {
-        public readonly Lift.Lift lift;
-        public readonly Floor.Floor[] floors;
+        public readonly Lift lift;
+        public readonly Floor[] floors;
     }
 }

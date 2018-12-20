@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Lift.buisness_logic.WeidthController;
 
-namespace Lift.buisness_logic.Models.Lift
+namespace Lift.buisness_logic
 {
     enum LiftState
     {
@@ -13,12 +12,13 @@ namespace Lift.buisness_logic.Models.Lift
         StayClose,
         StayOpen
     }
-    public class Lift
+    public class Lift : IModel
     {
-        public readonly Button.FloorButton buttons;
-        public readonly Button.GoButton goButton;
+        public readonly FloorButton[] buttons;
+        public readonly GoButton goButton;
         public readonly int weidthLimit;
-        public readonly WeidthController.WeidthController weidthController;
+        public readonly int floorNumber = 0;
+        public readonly WeidthController weidthController;
         // TODO valid mthod to managr
         private LiftState State {
             get

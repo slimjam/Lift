@@ -15,3 +15,5 @@ D:\study\3\c#\project\Lift\Lift\bin\Debug\Lift.Drawing.dll
 D:\study\3\c#\project\Lift\Lift\bin\Debug\Lift.Data.dll
 D:\study\3\c#\project\Lift\Lift\bin\Debug\Lift.Drawing.pdb
 D:\study\3\c#\project\Lift\Lift\bin\Debug\Lift.Data.pdb
+D:\study\3\c#\project\Lift\Lift\bin\Debug\Lift.Interfaces.dll
+D:\study\3\c#\project\Lift\Lift\bin\Debug\Lift.Interfaces.pdb

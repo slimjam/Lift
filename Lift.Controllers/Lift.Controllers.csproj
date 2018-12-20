@@ -46,12 +46,10 @@
     <Compile Include="Controllers\BuildingController\Implementations\BuildingController.cs" />
     <Compile Include="Controllers\ButtonController\IButtonController.cs" />
     <Compile Include="Controllers\ButtonController\Implementations\ButtonController.cs" />
-    <Compile Include="Controllers\Controlable.cs" />
     <Compile Include="Controllers\FloorController\IFloorController.cs" />
     <Compile Include="Controllers\FloorController\Implementations\FloorController.cs" />
     <Compile Include="Controllers\HumanController\IHumanController.cs" />
     <Compile Include="Controllers\HumanController\Implementations\HumanController.cs" />
-    <Compile Include="Controllers\IController.cs" />
     <Compile Include="Controllers\LiftController\ILiftController.cs" />
     <Compile Include="Controllers\LiftController\Implementations\LiftController.cs" />
     <Compile Include="Controllers\SystemController\Implementations\SystemController.cs" />
