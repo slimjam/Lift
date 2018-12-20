@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Lift.buisness_logic.WeidthController;
 
 namespace Lift.buisness_logic.Models.Lift
 {
@@ -12,12 +13,13 @@ namespace Lift.buisness_logic.Models.Lift
         StayClose,
         StayOpen
     }
-    class Lift
+    public class Lift
     {
         public readonly Button.FloorButton buttons;
         public readonly Button.GoButton goButton;
         public readonly int weidthLimit;
-        public readonly Controllers.WeidthController.Implementations.WeidthController weidthController;
+        public readonly WeidthController.WeidthController weidthController;
+        // TODO valid mthod to managr
         private LiftState State {
             get
             {

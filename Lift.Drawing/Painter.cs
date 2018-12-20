@@ -40,6 +40,7 @@ namespace Lift.Drawing
     {
         public PictureBox drawMan(DataForDraw data)
         {
+            //TODO add limit for only 8 ppl for the floor
             var pb = new PictureBox();
             pb.Image = new Bitmap(Properties.Resources.standing_man5050);
             pb.Size = data.itemSize;

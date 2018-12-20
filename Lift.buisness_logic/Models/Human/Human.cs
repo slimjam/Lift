@@ -11,5 +11,13 @@ namespace Lift.buisness_logic.Models.Human
         public readonly int weidth;
         public readonly int targertFloor;
         public readonly int currentFloor;
+        public readonly int startFloor;
+        Human(int _weidth, int _targertFloor, int _currentFloor, int _startFloor)
+        {
+            weidth = _weidth;
+            targertFloor = _targertFloor;
+            currentFloor = _currentFloor;
+            startFloor = _startFloor;
+        }
     }
 }

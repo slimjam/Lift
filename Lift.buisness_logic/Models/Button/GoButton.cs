@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lift.buisness_logic.Models.Button
 {
-    class GoButton : BaseButton
+    public class GoButton : BaseButton
     {
     }
 }

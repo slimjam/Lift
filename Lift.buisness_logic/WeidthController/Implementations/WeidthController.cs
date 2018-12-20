@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lift.buisness_logic.Controllers.WeidthController.Implementations
+namespace Lift.buisness_logic.WeidthController
 {
-    class WeidthController
+    public class WeidthController
     {
     }
 }

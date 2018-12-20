@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lift.buisness_logic.Models.Building
 {
-    class Building
+    public class Building
     {
         public readonly Lift.Lift lift;
         public readonly Floor.Floor[] floors;

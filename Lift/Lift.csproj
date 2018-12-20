@@ -81,9 +81,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Lift.buisness_logic\Lift.buisness_logic.csproj">
+    <ProjectReference Include="..\Lift.buisness_logic\Lift.buisness_logic.Implementation.csproj">
       <Project>{cbde75f9-3d55-4f8d-8646-0c3b2f631a78}</Project>
-      <Name>Lift.buisness_logic</Name>
+      <Name>Lift.buisness_logic.Implementation</Name>
     </ProjectReference>
     <ProjectReference Include="..\Lift.Drawing\Lift.Drawing.csproj">
       <Project>{8a2fe975-71b4-4a3d-b622-e0fa3a73fd36}</Project>

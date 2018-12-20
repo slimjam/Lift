@@ -126,13 +126,15 @@ namespace Lift
             collections.Add(panel4.Controls);
             showButtons(collections);
 
-            dataDispatcher = new buisness_logic.DataDispatcher.StartDataDispatcher
+            var data = new buisness_logic.DataDispatcher.ConfigData
                 (
                 numericFloors.Value,
                 numericPpl.Value,
                 checkBoxDisplay.Checked,
                 checkBoxExcel.Checked
-                ); 
+                );
+
+            dataDispatcher = new buisness_logic.DataDispatcher.StartDataDispatcher(data); 
 
             startButton.Visible = false;
         }

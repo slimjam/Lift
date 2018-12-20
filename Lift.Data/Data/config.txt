@@ -1,1 +1,1 @@
-floors: 1\npeople: 1\nto excel: False\nto screen: False
+floors: 1; people: 1; to excel: False; to screen: False

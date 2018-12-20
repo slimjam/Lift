@@ -40,23 +40,23 @@
             this.pplInformButton = new System.Windows.Forms.Button();
             this.simulationButton = new System.Windows.Forms.Button();
             this.mainPanel = new System.Windows.Forms.Panel();
-            this.listView1 = new System.Windows.Forms.ListView();
             this.startUpPanel = new System.Windows.Forms.Panel();
-            this.checkBoxExcel = new System.Windows.Forms.CheckBox();
-            this.checkBoxDisplay = new System.Windows.Forms.CheckBox();
-            this.numericFloors = new System.Windows.Forms.NumericUpDown();
-            this.numericPpl = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.labelFloorError = new System.Windows.Forms.Label();
             this.labelPplError = new System.Windows.Forms.Label();
+            this.labelFloorError = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.numericPpl = new System.Windows.Forms.NumericUpDown();
+            this.numericFloors = new System.Windows.Forms.NumericUpDown();
+            this.checkBoxDisplay = new System.Windows.Forms.CheckBox();
+            this.checkBoxExcel = new System.Windows.Forms.CheckBox();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.mainPanel.SuspendLayout();
             this.startUpPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericFloors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericPpl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericFloors)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -216,17 +216,6 @@
             this.mainPanel.Size = new System.Drawing.Size(851, 477);
             this.mainPanel.TabIndex = 2;
             // 
-            // listView1
-            // 
-            this.listView1.BackColor = System.Drawing.Color.LavenderBlush;
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.listView1.Location = new System.Drawing.Point(755, 68);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(264, 477);
-            this.listView1.TabIndex = 1;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.Visible = false;
-            // 
             // startUpPanel
             // 
             this.startUpPanel.Controls.Add(this.labelPplError);
@@ -243,16 +232,65 @@
             this.startUpPanel.Size = new System.Drawing.Size(851, 477);
             this.startUpPanel.TabIndex = 0;
             // 
-            // checkBoxExcel
+            // labelPplError
             // 
-            this.checkBoxExcel.AutoSize = true;
-            this.checkBoxExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxExcel.Location = new System.Drawing.Point(24, 356);
-            this.checkBoxExcel.Name = "checkBoxExcel";
-            this.checkBoxExcel.Size = new System.Drawing.Size(704, 33);
-            this.checkBoxExcel.TabIndex = 0;
-            this.checkBoxExcel.Text = "Write information into Excel file after programm shutdown";
-            this.checkBoxExcel.UseVisualStyleBackColor = true;
+            this.labelPplError.AutoSize = true;
+            this.labelPplError.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPplError.ForeColor = System.Drawing.Color.Crimson;
+            this.labelPplError.Location = new System.Drawing.Point(467, 50);
+            this.labelPplError.Name = "labelPplError";
+            this.labelPplError.Size = new System.Drawing.Size(295, 20);
+            this.labelPplError.TabIndex = 7;
+            this.labelPplError.Text = "People quantity should be greater then 0";
+            this.labelPplError.Visible = false;
+            // 
+            // labelFloorError
+            // 
+            this.labelFloorError.AutoSize = true;
+            this.labelFloorError.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFloorError.ForeColor = System.Drawing.Color.Crimson;
+            this.labelFloorError.Location = new System.Drawing.Point(467, 12);
+            this.labelFloorError.Name = "labelFloorError";
+            this.labelFloorError.Size = new System.Drawing.Size(381, 20);
+            this.labelFloorError.TabIndex = 6;
+            this.labelFloorError.Text = "Floors quantity should be in rang from 1 to 5 included";
+            this.labelFloorError.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(3, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(325, 29);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Please, enter people quantity";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(309, 29);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Please, enter floors quantity";
+            // 
+            // numericPpl
+            // 
+            this.numericPpl.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.numericPpl.Location = new System.Drawing.Point(350, 48);
+            this.numericPpl.Name = "numericPpl";
+            this.numericPpl.Size = new System.Drawing.Size(104, 22);
+            this.numericPpl.TabIndex = 3;
+            // 
+            // numericFloors
+            // 
+            this.numericFloors.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.numericFloors.Location = new System.Drawing.Point(350, 6);
+            this.numericFloors.Name = "numericFloors";
+            this.numericFloors.Size = new System.Drawing.Size(104, 22);
+            this.numericFloors.TabIndex = 2;
             // 
             // checkBoxDisplay
             // 
@@ -265,65 +303,27 @@
             this.checkBoxDisplay.Text = "Show information on the screen after programm shutdown";
             this.checkBoxDisplay.UseVisualStyleBackColor = true;
             // 
-            // numericFloors
+            // checkBoxExcel
             // 
-            this.numericFloors.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.numericFloors.Location = new System.Drawing.Point(352, 60);
-            this.numericFloors.Name = "numericFloors";
-            this.numericFloors.Size = new System.Drawing.Size(104, 22);
-            this.numericFloors.TabIndex = 2;
+            this.checkBoxExcel.AutoSize = true;
+            this.checkBoxExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxExcel.Location = new System.Drawing.Point(24, 356);
+            this.checkBoxExcel.Name = "checkBoxExcel";
+            this.checkBoxExcel.Size = new System.Drawing.Size(704, 33);
+            this.checkBoxExcel.TabIndex = 0;
+            this.checkBoxExcel.Text = "Write information into Excel file after programm shutdown";
+            this.checkBoxExcel.UseVisualStyleBackColor = true;
             // 
-            // numericPpl
+            // listView1
             // 
-            this.numericPpl.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.numericPpl.Location = new System.Drawing.Point(350, 118);
-            this.numericPpl.Name = "numericPpl";
-            this.numericPpl.Size = new System.Drawing.Size(104, 22);
-            this.numericPpl.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(19, 53);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(309, 29);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Please, enter floors quantity";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(19, 110);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(325, 29);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Please, enter people quantity";
-            // 
-            // labelFloorError
-            // 
-            this.labelFloorError.AutoSize = true;
-            this.labelFloorError.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFloorError.ForeColor = System.Drawing.Color.Crimson;
-            this.labelFloorError.Location = new System.Drawing.Point(467, 62);
-            this.labelFloorError.Name = "labelFloorError";
-            this.labelFloorError.Size = new System.Drawing.Size(381, 20);
-            this.labelFloorError.TabIndex = 6;
-            this.labelFloorError.Text = "Floors quantity should be in rang from 1 to 5 included";
-            this.labelFloorError.Visible = false;
-            // 
-            // labelPplError
-            // 
-            this.labelPplError.AutoSize = true;
-            this.labelPplError.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPplError.ForeColor = System.Drawing.Color.Crimson;
-            this.labelPplError.Location = new System.Drawing.Point(467, 120);
-            this.labelPplError.Name = "labelPplError";
-            this.labelPplError.Size = new System.Drawing.Size(295, 20);
-            this.labelPplError.TabIndex = 7;
-            this.labelPplError.Text = "People quantity should be greater then 0";
-            this.labelPplError.Visible = false;
+            this.listView1.BackColor = System.Drawing.Color.LavenderBlush;
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.listView1.Location = new System.Drawing.Point(755, 68);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(264, 477);
+            this.listView1.TabIndex = 1;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.Visible = false;
             // 
             // Form1
             // 
@@ -346,8 +346,8 @@
             this.mainPanel.ResumeLayout(false);
             this.startUpPanel.ResumeLayout(false);
             this.startUpPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericFloors)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericPpl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericFloors)).EndInit();
             this.ResumeLayout(false);
 
         }

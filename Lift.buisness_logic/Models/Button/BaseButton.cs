@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lift.buisness_logic.Models.Button
 {
-    abstract class BaseButton
+    public abstract class BaseButton
     {
         protected bool IsPressed { get; set; }
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lift.buisness_logic.Models.Floor
 {
-    class Floor
+    public class Floor
     {
         public readonly int number;
         public readonly Button.FloorButton button;

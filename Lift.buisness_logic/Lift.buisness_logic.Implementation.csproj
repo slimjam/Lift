@@ -43,22 +43,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="Controllers\BuildingController\IBuildingController.cs" />
-    <Compile Include="Controllers\BuildingController\Implementations\BuildingController.cs" />
-    <Compile Include="Controllers\ButtonController\IButtonController.cs" />
-    <Compile Include="Controllers\ButtonController\Implementations\ButtonController.cs" />
-    <Compile Include="Controllers\Controlable.cs" />
-    <Compile Include="Controllers\FloorController\IFloorController.cs" />
-    <Compile Include="Controllers\FloorController\Implementations\FloorController.cs" />
-    <Compile Include="Controllers\HumanController\IHumanController.cs" />
-    <Compile Include="Controllers\HumanController\Implementations\HumanController.cs" />
-    <Compile Include="Controllers\IController.cs" />
-    <Compile Include="Controllers\LiftController\ILiftController.cs" />
-    <Compile Include="Controllers\LiftController\Implementations\LiftController.cs" />
-    <Compile Include="Controllers\SystemController\Implementations\SystemController.cs" />
-    <Compile Include="Controllers\SystemController\ISystemController.cs" />
-    <Compile Include="Controllers\WeidthController\Implementations\WeidthController.cs" />
-    <Compile Include="Controllers\WeidthController\IWeidthController.cs" />
     <Compile Include="DataDispatcher\DataDrawDispatcher\DataDrawDispatcher.cs" />
     <Compile Include="DataDispatcher\StartDataDispatcher\StartDataDispatcher.cs" />
     <Compile Include="Models\Building\Building.cs" />
@@ -70,6 +54,8 @@
     <Compile Include="Models\IItem.cs" />
     <Compile Include="Models\Lift\Lift.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WeidthController\Implementations\WeidthController.cs" />
+    <Compile Include="WeidthController\IWeidthController.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Lift.Data\Lift.Data.csproj">
@@ -77,6 +63,12 @@
       <Name>Lift.Data</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Managers\BuildingManager\" />
+    <Folder Include="Managers\ButtonManager\" />
+    <Folder Include="Managers\FloorManager\" />
+    <Folder Include="Managers\HumanManager\" />
+    <Folder Include="Managers\LiftManager\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

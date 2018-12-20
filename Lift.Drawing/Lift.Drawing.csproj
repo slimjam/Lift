@@ -64,9 +64,9 @@
     <Content Include="Resources\standing-man5050.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Lift.buisness_logic\Lift.buisness_logic.csproj">
+    <ProjectReference Include="..\Lift.buisness_logic\Lift.buisness_logic.Implementation.csproj">
       <Project>{cbde75f9-3d55-4f8d-8646-0c3b2f631a78}</Project>
-      <Name>Lift.buisness_logic</Name>
+      <Name>Lift.buisness_logic.Implementation</Name>
     </ProjectReference>
     <ProjectReference Include="..\Lift.Data\Lift.Data.csproj">
       <Project>{5dea7147-85b3-432b-a99d-ff9d09c506c9}</Project>
