@@ -8,5 +8,10 @@ namespace Lift.buisness_logic
 {
     public class WeidthController
     {
+        private int weidthLimit;
+        public bool IsOverload(int weidth)
+        {
+            return weidth > weidthLimit;
+        }
     }
 }

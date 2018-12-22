@@ -3,12 +3,14 @@ using System.Collections.Generic;
 
 namespace Lift.buisness_logic
 {
-    public class BaseManager : SystemManager, IManager<IModel>
+    public class BaseManager : IManager<IModel>
     {
+        public SystemManager mainManager;
         public List<IModel> items;
-        public BaseManager()
+        public BaseManager(SystemManager manager=null)
         {
             items = new List<IModel>();
+            mainManager = manager;
         }
         public void AddItem(IModel item)
         {

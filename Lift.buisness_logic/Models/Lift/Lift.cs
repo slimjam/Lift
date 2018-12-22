@@ -6,32 +6,34 @@ using System.Threading.Tasks;
 
 namespace Lift.buisness_logic
 {
-    enum LiftState
+    public enum LiftState
     {
-        Go,
+        GoUp,
+        GoDown,
         StayClose,
         StayOpen
     }
     public class Lift : IModel
     {
-        public readonly FloorButton[] buttons;
+        public readonly List<FloorButton> buttons;
         public readonly GoButton goButton;
         public readonly int weidthLimit;
-        public readonly int floorNumber = 0;
+        public int floorNumber = 1;    // first floor
         public readonly WeidthController weidthController;
+        public List<Human> humen;
         // TODO valid mthod to managr
-        private LiftState State {
+        public LiftState State {
             get
             {
                 return this.State;
             }
             set
             {
-                if ((this.State == LiftState.Go && value == LiftState.StayOpen) || 
-                    (this.State == LiftState.StayOpen && value == LiftState.Go)) { throw new ArgumentException(); }
+                if (((State == LiftState.GoUp || State == LiftState.GoDown) && value == LiftState.StayOpen) || 
+                    (State == LiftState.StayOpen && (value == LiftState.GoUp || value == LiftState.GoDown))) { throw new ArgumentException(); }
 
                 else {
-                    this.State = value;
+                    State = value;
                 }
 
             }
