@@ -20,6 +20,12 @@ namespace Lift.buisness_logic
             return false;
         }
 
+        internal bool GetButtonState(int floorNum)
+        {
+            // check two objct in lift and on floor
+            throw new NotImplementedException();
+        }
+
         internal LiftState GetDirection(int currentFloor)
         {
             var state = LiftState.StayClose;

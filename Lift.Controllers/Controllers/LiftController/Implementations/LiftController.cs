@@ -3,10 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Lift.buisness_logic;
 
-namespace Lift.buisness_logic.Controllers.LiftController.Implementations
+namespace Lift.Controllers
 {
-    class LiftController
+    public class LiftController
     {
+        public LiftManager manager;
+        public LiftController()
+        {
+            manager = new LiftManager();
+        }
     }
 }

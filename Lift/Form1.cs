@@ -9,13 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Lift.Drawing;
 using Lift.buisness_logic;
+using Lift.Controllers;
 //using System.ComponentModel.DataAnnotations;
 
 namespace Lift
 {
     public partial class Form1 : Form
     {
-        int ppl = 2; // test sheet
+        //int ppl = 2; // test sheet
         public Painter painter;
         public buisness_logic.DataDispatcher.StartDataDispatcher dataDispatcher;
         public buisness_logic.DataDispatcher.DataDrawDispatcher dataDrawDispatcher;
@@ -27,38 +28,38 @@ namespace Lift
             dataDrawDispatcher = new buisness_logic.DataDispatcher.DataDrawDispatcher();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        /*private void Form1_Load(object sender, EventArgs e)
         {
 
-        }
+        }*/
 
-        public void config_panel()
+        /*public void config_panel()
         {
 
-        }
+        }*/
 
         private void configButton_Click(object sender, EventArgs e)
         {
             listView1.Items.Clear();
             var lab = new ListViewItem();
-            lab.Text = "Config";
+            //lab.Text = "Config";
             listView1.Items.Add(lab);
             listView1.Visible = true;
         }
 
         private void pplInformButton_Click(object sender, EventArgs e)
         {
-            //TODO start->simul->showInfo = noInfo; 
             listView1.Items.Clear();
             var lab = new ListViewItem();
-            lab.Text = "Test Label for PPLINFO";
+            //lab.Text = "Test Label for PPLINFO";
             listView1.Items.Add(lab);
             listView1.Visible = true;
         }
 
         private void simulationButton_Click(object sender, EventArgs e)
         {
-            int floorsCount = 4; // test sheet
+            listView1.Visible = false;
+            /*int floorsCount = 4; // test sheet
             // read from startupconf.floorsnum
             listView1.Visible = false;
             //painter.drawBuilding(mainPanel);
@@ -69,7 +70,7 @@ namespace Lift
                 var lift = painter.drawLift(data);
                 mainPanel.Controls.Add(lift);
 
-            }
+            }*/
         }
 
         private void showButtons(List<Control.ControlCollection> collections)
@@ -85,11 +86,9 @@ namespace Lift
 
         private bool hideStartUpPanel()
         {
-            // check req fields
-            // notificate if they r empty
             bool res = true;
 
-            if(numericFloors.Value <= 0 && numericFloors.Value <= 5)
+            if(numericFloors.Value <= 1 && numericFloors.Value <= 5)
             {
                 numericFloors.BackColor = Color.LightPink; // looks like constant
                 labelFloorError.Visible = true;
@@ -119,7 +118,7 @@ namespace Lift
 
         private void startButton_Click(object sender, EventArgs e)
         {
-            if (!hideStartUpPanel()) { return; }
+            if (!hideStartUpPanel()) { return; }    //validation if()
 
             var collections = new List<Control.ControlCollection>();
             collections.Add(panel2.Controls);
@@ -136,7 +135,23 @@ namespace Lift
 
             dataDispatcher = new buisness_logic.DataDispatcher.StartDataDispatcher(data); 
 
-            startButton.Visible = false;
+            /////////////////////////////////
+            //startButton.Visible = false;
+            //int floorsCount = (int)numericFloors.Value; // test sheet
+            // read from startupconf.floorsnum
+            listView1.Visible = false;
+            //painter.drawBuilding(mainPanel);
+            /*for (int n = 0; n < floorsCount; ++n)
+            {
+                dataDrawDispatcher.SetData(floorN: n);
+                var data2 = dataDrawDispatcher._data;
+                var lift = painter.drawLift(data2);
+                mainPanel.Controls.Add(lift);
+
+            }*/
+            SystemController system = new SystemController();
+            system.Run();
+
         }
 
         private void stopButton_Click(object sender, EventArgs e)
@@ -145,7 +160,10 @@ namespace Lift
             //if yes, check that error labels are invisible
 
             //test sheet
-            foreach (Control control in mainPanel.Controls)
+
+            ////////////////////////////////////////////////////////////////
+
+            /*foreach (Control control in mainPanel.Controls)
             {
                 if(control.GetType() == typeof(LiftPrototype))
                 {
@@ -153,16 +171,19 @@ namespace Lift
                     lift.Full();
                 }
                 
-            }
+            }*/
         }
 
         private void createButton_Click(object sender, EventArgs e)
         {
-            dataDrawDispatcher.SetData(itemN:ppl); //test sheet
+
+            ////////////////
+            /*var ppl = (int)numericPpl.Value; 
+            dataDrawDispatcher.SetData(itemN:ppl);
             var data = dataDrawDispatcher._data;
             var man = painter.drawMan(data);
             mainPanel.Controls.Add(man);
-            ppl += 1;
+            ppl += 1;*/
         }
         // add validation for draw.location and form.size 
                 

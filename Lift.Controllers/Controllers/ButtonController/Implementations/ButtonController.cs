@@ -1,19 +1,24 @@
-﻿using System;
+﻿using Lift.buisness_logic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Lift.buisness_logic.Models.Lift;
-using Lift.buisness_logic.Models.Button;
 
-namespace Lift.buisness_logic.Controllers.ButtonController.Implementations
+namespace Lift.Controllers
 {
-    class ButtonController : IButtonController
+    public class ButtonController : IButtonController
     {
-        private FloorButton[] floorButtons; 
-        public bool ChangeState(LiftState newState)
+        //public List<FloorButton> floorButtons;
+
+        /*public bool ChangeState(LiftState newState)
         {
             return false;
+        }*/     //replace to manager
+        public ButtonManager manager;
+        public ButtonController()
+        {
+            manager = new ButtonManager();
         }
     }
 }

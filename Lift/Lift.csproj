@@ -85,6 +85,10 @@
       <Project>{cbde75f9-3d55-4f8d-8646-0c3b2f631a78}</Project>
       <Name>Lift.buisness_logic.Implementation</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Lift.Controllers\Lift.Controllers.csproj">
+      <Project>{05B5B2B4-C899-49C1-AF34-F82AEBD16118}</Project>
+      <Name>Lift.Controllers</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Lift.Drawing\Lift.Drawing.csproj">
       <Project>{8a2fe975-71b4-4a3d-b622-e0fa3a73fd36}</Project>
       <Name>Lift.Drawing</Name>

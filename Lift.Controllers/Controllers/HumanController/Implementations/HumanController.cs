@@ -3,10 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Lift.buisness_logic;
 
-namespace Lift.buisness_logic.Controllers.HumanController.Implementations
+namespace Lift.Controllers
 {
-    class HumanController
+    public class HumanController
     {
+        public HumanManager manager;
+        public HumanController()
+        {
+            manager = new HumanManager();
+        }
     }
 }

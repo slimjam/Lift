@@ -17,7 +17,7 @@ namespace Lift.buisness_logic
             items.Add(item);
         }
 
-        public IModel CreateItem()
+        public virtual IModel CreateItem()
         {
             throw new NotImplementedException();
         }

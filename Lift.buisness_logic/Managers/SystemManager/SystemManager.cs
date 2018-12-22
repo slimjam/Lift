@@ -14,7 +14,7 @@ namespace Lift.buisness_logic
         public FloorManager floorManager;
         public HumanManager humanManager;
 
-        SystemManager(LiftManager _liftManager, ButtonManager _buttonManager,
+        public SystemManager(LiftManager _liftManager, ButtonManager _buttonManager,
             BuildingManager _buildingManager, FloorManager _floorManager, HumanManager _humanManager)
         {
             liftManager = _liftManager;

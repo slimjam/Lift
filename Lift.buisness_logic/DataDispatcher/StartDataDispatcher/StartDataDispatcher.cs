@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Lift.buisness_logic.DataDispatcher
@@ -64,22 +65,26 @@ namespace Lift.buisness_logic.DataDispatcher
             File.WriteAllText(GetPathToDB(), ToString());
         }
 
-        private ConfigData ParseDBData(string data)
+        public ConfigData ParseDBData(string data)
         {
-            return new ConfigData(1,1,true,true); // test sheet
+            Regex regex = new Regex(@"\d+");
+            MatchCollection matches = regex.Matches(data);
+            decimal floorsNum = decimal.Parse(matches[0].Value);
+            decimal pplCount = decimal.Parse(matches[1].Value);
+            return new ConfigData(floorsNum,pplCount,false,false); // test sheet for checkbox
         }
 
-        private void SetData(ConfigData data)
+        /*private void SetData(ConfigData data)
         {
             // set data
-        }
+        }*/
 
-        private void ReadFromFile()
+        public ConfigData ReadFromFile()
         {
             var dbData = File.ReadAllText(GetPathToDB());
-            var parsedData = ParseDBData(dbData);
+            return ParseDBData(dbData);
 
-            SetData(parsedData);
+            //SetData(parsedData);
         }
     }
 }

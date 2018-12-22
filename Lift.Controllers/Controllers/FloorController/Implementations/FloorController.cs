@@ -3,10 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Lift.buisness_logic;
 
-namespace Lift.buisness_logic.Controllers.FloorController.Implementations
+namespace Lift.Controllers
 {
-    class FloorController
+    public class FloorController
     {
+        public FloorManager manager;
+        public FloorController()
+        {
+            manager = new FloorManager();
+        }
     }
 }

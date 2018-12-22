@@ -61,6 +61,10 @@
       <Project>{cbde75f9-3d55-4f8d-8646-0c3b2f631a78}</Project>
       <Name>Lift.buisness_logic.Implementation</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Lift.Interfaces\Lift.buisness_logic.Interfaces.csproj">
+      <Project>{385266E5-E596-4807-B9BA-7EB0EC25B19F}</Project>
+      <Name>Lift.buisness_logic.Interfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

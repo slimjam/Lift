@@ -11,6 +11,7 @@ namespace Lift.buisness_logic
         private bool IsFloorButtonPressed(int floorNum)
         {
             // bad way.. better create some util or 'response' to main manager. Not direct usage. But deadlines..
+            mainManager.buttonManager.GetButtonState(floorNum);
             return mainManager.floorManager.GetButtonState(floorNum);
         }
         public void Main()
@@ -21,7 +22,7 @@ namespace Lift.buisness_logic
                 foreach (IModel _lift in items) // in current realese it will be always just one lift
                 {
                     Lift lift = _lift as Lift;
-                    if (IsFloorButtonPressed(lift.floorNumber)) // and in lift too not only on the floor!!!!!!!!!!!!!!!!!
+                    if (IsFloorButtonPressed(lift.floorNumber))
                     {
                         if (lift.State == LiftState.GoUp || lift.State == LiftState.GoDown)
                         {
@@ -103,6 +104,12 @@ namespace Lift.buisness_logic
         public bool IsGoButtonPressed(Lift lift)
         {
             return lift.goButton.IsPressed;
+        }
+        public override IModel CreateItem()
+        {
+            var lift = new Lift();
+            AddItem(lift);
+            return lift;
         }
     }
 }
